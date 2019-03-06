@@ -8,6 +8,8 @@
 export interface TreeModel {
     name: string;
     id: number;
+    visible: boolean;
+    icon: string;
     options?: TreeItemOptions;
     childrens: TreeModel[];
 }
@@ -55,5 +57,7 @@ export interface TreeConfig {
 }
 
 export interface FindingResults {
-    foundItem: TreeModel, itemsList: TreeModel[], parentItem?: TreeModel
+    foundItem: TreeModel,
+    itemsList: TreeModel[],
+    parentItem?: TreeModel
 }
